@@ -4,6 +4,10 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static("public"));
 
+app.get('/', function(req, res) {
+  app.use(express.static("public"));
+})
+
 app.get('/newanimal', function(req, res) {
   console.log('i receive a GET request');
  
