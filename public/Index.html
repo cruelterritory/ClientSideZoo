@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Zoo C2</title>
+        <script src="Script.js" defer></script>
+        <link rel="stylesheet" type="text/css" href="Style.css"/>
+    </head>
+    <body>
+        <form id="AnimalForm">
+            <label for="Type">Pick Type</label>
+            <select id="Type" size="4">
+                <option value="Platypus"> Platypus </option>
+                <option value="Hummingbird"> Hummingbird </option>
+                <option value="Shark"> Shark </option>
+                <option value="chimpanzee"> Chimpanzee </option>
+            </select>
+            <br>
+            <label for="Name">Name</label>
+            <input type="text" id="NameF" name="Name">
+            <br>
+            <label for="Age">Age</label>
+            <input type="text" id="AgeF" name="Age">
+            <br>
+            <label for="Weight">Weight</label>
+            <input type="text" id="WeightF" name="Weight">
+            <br>
+            <label for="Gender">Gender</label>
+            <input type="radio" id="Female" name="Gender" value="Female"> Female </input>
+            <input type="radio" id="Male" name="Gender" value="Male"> Male </input>
+            <br>
+            <label for="Pregnant">Is Pregnant</label>
+            <input type="radio" id="Yes" name="Pregnant" value="Yes"> Yes </input>
+            <input type="radio" id="No" name="Pregnant" value="No"> No </input>
+            <br>
+            <button type="button" id="Add">Add</button>
+
+        </form>
+        <table id="AnimalTable">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Weight</th>
+                <th>Pregnant</th>
+                <th>Birth</th>
+            </tr>
+            <tbody id="AnimalBody">
+            </tbody>
+        </table>
+        <label for="NumberOfAnimals" id="NumberOfAnimals">Number of Animals:</label>
+        <div id="FindAnimal">
+            <label for="Search">Search for animal by name</label>
+            <input type="text" id="Search" name="Search">
+            <button type="button" id="SearchButton">Search</button>
+            <p id="SearchDisplay"></p>
+        </div>
+        <button type="button" id="AdmitButton">Admit Guest</button>
+        <p id="AdmitDisplay"></p>
+    </body>
+</html>
